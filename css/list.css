@@ -1,0 +1,52 @@
+.list {
+  list-style-type: none;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.list__item--text {
+  flex-basis: 80%;
+  text-align: left;
+}
+
+.list__task--done {
+  text-decoration: line-through;
+  flex-basis: 90%;
+  text-align: left;
+}
+
+.list__button {
+  border: none;
+  height: 25px;
+  width: 25px;
+  transition: background 1s;
+  cursor: pointer;
+}
+
+.list__button--remove {
+  background-color: crimson;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+.list__button--remove:hover {
+  background-color: hsl(348, 83%, 70%);
+}
+
+.list__button--done {
+  background-color: green;
+  color: hsl(0, 0%, 100%);
+  margin-right: 10px;
+}
+
+.list__button--done:hover {
+  background-color: hsl(120, 100%, 35%);
+}
