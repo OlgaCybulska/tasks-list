@@ -1,0 +1,23 @@
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 5px ;
+    padding: 40px;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+.container__item {
+    margin: 2px;
+    background-color: white;
+    padding: 15px;
+}
+.container__header {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px){
+    .container {
+        max-width: 500px;
+    }
+}
