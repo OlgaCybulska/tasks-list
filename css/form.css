@@ -21,6 +21,12 @@
     padding: 10px;
     cursor: pointer;  
 }
+.form__button:active {
+    background-color: hsl(180, 100%, 30%);
+}
+.form__button:hover {
+    background-color: hsl(180, 80%, 25%);
+}
 
 .form__input {
     flex-basis: 1000px;
