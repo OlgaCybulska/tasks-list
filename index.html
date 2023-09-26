@@ -15,8 +15,10 @@
     <link href="css/container.css" rel="stylesheet" />
     <link href="css/form.css" rel="stylesheet" />
     <link href="css/list.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
-    <link rel="icon" href="images/icon.png">
+    <meta property="og:image" content="images/og-image.png" />
+    <link rel="icon" href="images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,25 +27,31 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1 class="container__header">Lista zadań</h1>
-      <form class="js-form form">
-        <div class="container__item">
-          <legend class="form__legend">Dodaj nowe zadanie</legend>
+    <div class="body">
+      <section>
+        <h1 class="section__heade">Lista zadań</h1>
+        <form class="js-form form">
+          <div class="section__item">
+            <legend class="form__legend">Dodaj nowe zadanie</legend>
+          </div>
+          <div class="section__item form__flex">
+            <input
+              type="text"
+              class="js-newTask form__input"
+              placeholder="Co jest do zrobienia?"
+              autofocus
+            />
+            <button class="form__button">Dodaj zadanie</button>
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="section__flex section__item">
+          <h2 class="section__header">Lista zadań</h2>
+          <span class="js-buttons section__button"></span>
         </div>
-        <div class="container__item form__flex">
-          <input type="text"
-            class="js-newTask form__input"
-           
-            placeholder="Co jest do zrobienia?"
-            autofocus
-          />
-          <button class="form__button">Dodaj zadanie</button>
-        </div>
-      </form>
-      <h2 class="container__item">Lista zadań</h2>
-      <span class="js-buttons section__button"></span>
-      <ul class="js-tasks container__item"></ul>
+        <ul class="js-tasks section__item"></ul>
+      </section>
     </div>
   </body>
 </html>
