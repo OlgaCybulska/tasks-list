@@ -14,18 +14,22 @@
 }
 
 .form__button {
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
     flex-basis: 200px;
     padding: 10px;
     cursor: pointer;  
+    transition: 1s;
+    margin-right: 10px;
 }
 .form__button:active {
     background-color: hsl(180, 100%, 30%);
 }
 .form__button:hover {
-    background-color: hsl(180, 80%, 25%);
+    background-color: hsl(180, 80%, 40%);
+    transform: scale(1.2);
+    border-radius: 3px;
 }
 
 .form__input {
@@ -51,5 +55,6 @@
 @media (max-width: 767px){
     .form__button {
         flex: 1 1 300px;
+        margin: 0px;
     }
 }
