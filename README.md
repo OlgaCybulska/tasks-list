@@ -8,7 +8,8 @@ On this page you can create your own to-do list!
 3. If you done your task - press the green button
 ![screen2](https://olgacybulska.github.io/tasks-list/images/task-done-screen.png)
 4. To delete - press the red button.
-
+5. You can hide or show completed tasks. and mark all as done.
+![screen3](https://olgacybulska.github.io/tasks-list/images/markAlldone-toggle-screen.png)
 
 ## Technologies used to make the page:
 - HTLM
